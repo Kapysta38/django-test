@@ -31,12 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'polls.apps.PollsConfig',  # Подключение приложения к проекту
+    'django.contrib.admin',  # Адмника сайта
+    'django.contrib.auth',  # Система аунтефикации
+    'django.contrib.contenttypes',  # Фреймворк для типов контента
+    'django.contrib.sessions',  # Фреймворк для сессий
+    'django.contrib.messages',  # Фреймворк для обмена сообщениями
+    'django.contrib.staticfiles',  # Фреймворк для управления статическими файлами
 ]
 
 MIDDLEWARE = [
@@ -103,9 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+5'
 
 USE_I18N = True
 
